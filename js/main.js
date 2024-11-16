@@ -16,7 +16,7 @@ function loadPage(page) {
     if (page === 'home') {
         mainContent.innerHTML = `
         <div class="intro-text">
-            <h1>I'm <span class="highlight">AGUSTIN WIDMAN</span></h1>
+            <h1> <span class="highlight"> Mi Perfil -- AGUSTIN WIDMAN</span></h1>
             <p>Transformando ideas en soluciones tecnológicas y apasionado por el aprendizaje continuo.</p>
             <p style="font-size: 1.5em; font-style: italic; color: #666; margin-top: 15px;">
                 "Si he logrado ver más lejos, es porque estoy parado sobre los hombros de gigantes."
@@ -24,11 +24,11 @@ function loadPage(page) {
             </p>
             <a href="assets/WidmanCVV.pdf" download="Agustin_Widman_CV" class="ant-btn ant-btn-primary">Download CV</a>
         </div>
-        <!--
+        
         <div class="profile-photo">
             <img src="assets/images/profile.jpg" alt="Profile Photo">
         </div>
-        -->
+        
     `;
     } else if (page === 'about') {
         mainContent.innerHTML = `
