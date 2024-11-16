@@ -1,0 +1,182 @@
+/* General reset - Elimina márgenes y paddings predeterminados y configura el box model */
+* {
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    box-sizing: border-box; /* Incluye padding y borde dentro del ancho/alto */
+}
+
+/* Configuración general del body */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal */
+    /*background-color: #f2f2f2;  Color de fondo del sitio */
+    background-color: #ADD8E6;
+    color: #333; /* Color principal del texto */
+}
+
+/* Header - Cabecera principal */
+.header {
+    display: flex; /* Contenedor flexible */
+    justify-content: space-between; /* Distribuye elementos equitativamente */
+    align-items: center; /* Alinea verticalmente */
+    padding: 15px 20px; /* Relleno interno */
+    background-color: #0074cc; /* Color de fondo#f2f2f2 */
+}
+
+/* Enlaces dentro del header */
+.header nav a {
+    color: #0074cc; /* Color del texto */
+    margin: 0 20px; /* Espaciado entre enlaces */
+    font-size: 1.2em; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Quita el subrayado */
+    padding: 10px 15px; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Animación suave al pasar el cursor */
+}
+
+/* Efectos hover y activo para enlaces */
+.header nav a:hover,
+.header nav a.active {
+    background-color: #005999; /* Fondo al pasar el ratón */
+    color: #ffffff; /* Texto blanco en hover */
+}
+
+/* Main Content - Contenido principal */
+.main-content {
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    flex-wrap: wrap; /* Permite múltiples filas */
+    padding: 40px 20px; /* Relleno interno */
+    min-height: calc(100vh - 120px); /* Altura mínima dinámica */
+}
+
+/* Texto introductorio */
+.intro-text {
+    text-align: left; /* Alineación del texto */
+    max-width: 45%; /* Ancho máximo */
+    margin-left: 10px; /* Espaciado a la izquierda */
+}
+
+.intro-text h1 {
+    font-size: 2.2em; /* Tamaño del título */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.highlight {
+    color: #0074cc; /* Color de palabras resaltadas */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.intro-text p {
+    font-size: 1.1em; /* Tamaño del texto */
+    color: #666; /* Color gris */
+    margin-bottom: 20px; /* Margen inferior */
+    line-height: 1.6; /* Altura de línea */
+}
+
+/* Imagen de perfil */
+.profile-photo {
+    max-width: 45%; /* Ancho máximo */
+    margin-right: 10px; /* Margen derecho */
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.profile-photo img {
+    width: 100%; /* Ancho completo */
+    max-width: 280px; /* Ancho máximo */
+    height: auto; /* Altura automática */
+    border: 5px solid #0074cc; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Diseño vertical */
+        align-items: center; /* Centrado */
+    }
+
+    .intro-text,
+    .profile-photo {
+        max-width: 100%; /* Ancho completo */
+        text-align: center; /* Texto centrado */
+        margin: 10px 0; /* Margen superior e inferior */
+    }
+}
+
+/* Portfolio Section
+.portfolio-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+*/
+.portfolio-section h2 {
+    color: #0074cc; /* Color del título */
+    text-align: center; /* Texto centrado */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* About Me Section */
+.about-section {
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* Diseño en columnas */
+    gap: 30px; /* Espaciado entre elementos */
+    padding: 20px; /* Relleno interno */
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado */
+}
+
+/*.bio-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}*/
+
+.bio-card h2 {
+    color: #0074cc;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.bio-card p {
+    font-size: 1.1em;
+    color: #0074cc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Divider */
+.divider {
+    border: none; /* Sin bordes */
+    border-top: 2px solid #0074cc; /* Línea superior azul */
+    margin: 20px 0; /* Margen vertical */
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex; /* Contenedor flexible */
+    justify-content: space-around; /* Distribución uniforme */
+    font-size: 1em; /* Tamaño del texto */
+    margin-top: 15px; /* Margen superior */
+    color: #333; /* Color del texto */
+}
+
+.contact-info a {
+    color: #0074cc; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
