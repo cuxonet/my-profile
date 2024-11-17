@@ -106,7 +106,7 @@ function loadPage(page) {
                     <h2 style="color: #0074cc; text-align: center;">Contáctame</h2>
                 </div>
                 <div class="ant-card-body" style="font-size: 1.2em; line-height: 1.6;">
-                    <p><strong>Email:</strong> <a href="mailto:UO308677@GMAIL.COM">UO308677@UNIOVI.ES</a></p>
+                    <p><strong>Correo:</strong> <a href="mailto:UO308677@GMAIL.COM">UO308677@UNIOVI.ES</a></p>
                     <p><strong>Teléfono:</strong> 624411952</p>
                     <p><strong>Dirección:</strong> Calle Falsa 123, Oviedo, España</p>
                     <p><strong>Horario de Contacto:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
