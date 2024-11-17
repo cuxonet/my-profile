@@ -264,6 +264,7 @@ body {
 
 .profile-photo img {
     width: 280px; /* Ancho fijo */
-    height: 280px; /* Altura fija */
+    height: 330px; /* Altura fija */
     object-fit: cover; /* Asegura que la imagen no se distorsione */
 }
+
