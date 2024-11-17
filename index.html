@@ -23,14 +23,17 @@
 <!-- Header -->
 <header class="header">
     <div class="search-container">
-        <input type="text" id="search-input" placeholder="Buscar...">
-        <button id="search-button">Buscar</button>
+        <!-- Etiqueta para el input -->
+        <label for="search-input" class="visually-hidden">Buscar contenido:</label>
+        <input type="text" id="search-input" placeholder="Buscar..." aria-label="Campo para buscar contenido">
+        <!-- Etiqueta para el botón -->
+        <button id="search-button" aria-label="Botón para realizar búsqueda">Buscar</button>
     </div>
     <nav>
-        <a href="#home" onclick="loadPage('home')">Inicio</a>
-        <a href="#about" onclick="loadPage('about')">Acerca de Mi</a>
-        <a href="#portfolio" onclick="loadPage('portfolio')">Trabajos</a>
-        <a href="#contact" onclick="loadPage('contact')">Contactame</a>
+        <a href="#home" onclick="loadPage('home')" aria-label="Ir a la sección de Inicio">Inicio</a>
+        <a href="#about" onclick="loadPage('about')" aria-label="Ir a la sección Acerca de Mí">Acerca de Mi</a>
+        <a href="#portfolio" onclick="loadPage('portfolio')" aria-label="Ir a la sección de Trabajos">Trabajos</a>
+        <a href="#contact" onclick="loadPage('contact')" aria-label="Ir a la sección de Contacto">Contactame</a>
     </nav>
 </header>
 
