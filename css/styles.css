@@ -107,7 +107,7 @@ body {
     }
 }
 
-/* Portfolio Section
+
 .portfolio-section {
     max-width: 800px;
     margin: 40px auto;
@@ -117,7 +117,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #333;
 }
-*/
+
 .portfolio-section h2 {
     color: #0074cc; /* Color del título */
     text-align: center; /* Texto centrado */
