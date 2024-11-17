@@ -18,12 +18,12 @@ body {
     justify-content: space-between; /* Distribuye elementos equitativamente */
     align-items: center; /* Alinea verticalmente */
     padding: 15px 20px; /* Relleno interno */
-    background-color: #f2f2f2; /* Color de fondo */
+    background-color: #e0e0e0; /* Color de fondo */
 }
 
 /* Enlaces dentro del header */
 .header nav a {
-    color: #0074cc; /* Color del texto */
+    color: #005499; /* Color del texto */
     margin: 0 20px; /* Espaciado entre enlaces */
     font-size: 1.2em; /* Tamaño del texto */
     font-weight: bold; /* Texto en negrita */
