@@ -130,17 +130,19 @@ document.addEventListener("DOMContentLoaded", () => {
 $(document).ready(function () {
     // Evento del botón de búsqueda
     $("#search-button").on("click", function () {
-        const value = $("#search-input").val().toLowerCase(); // Obtener el valor del input
+        const value = $("#search-input").val().toLowerCase().trim(); // Obtener el valor del input
 
         // Eliminar cualquier resaltado previo
         removeHighlights();
 
         if (value) {
-            // Buscar y resaltar coincidencias
+            // Crear expresión regular que incluya espacios
+            const regex = new RegExp(value, "gi");
+
+            // Buscar y resaltar coincidencias en todo el contenido
             $(".content *").contents().each(function () {
                 if (this.nodeType === 3) { // NodeType 3: Nodo de texto
                     const text = $(this).text();
-                    const regex = new RegExp(value, "gi"); // Expresión regular para buscar palabras
                     if (regex.test(text)) {
                         const highlightedText = text.replace(regex, function (match) {
                             return `<span class="highlight">${match}</span>`; // Envolver coincidencias en un span
@@ -152,7 +154,7 @@ $(document).ready(function () {
         }
     });
 
-    // Función para eliminar el resaltado
+    // Función para eliminar el resaltado previo
     function removeHighlights() {
         $(".highlight").each(function () {
             $(this).replaceWith($(this).text()); // Reemplazar el span por su texto original
