@@ -22,7 +22,7 @@ function loadPage(page) {
                 "Si he logrado ver más lejos, es porque estoy parado sobre los hombros de gigantes."
                 <span style="font-size: 0.8em; font-style: normal; color: #333;">- Isaac Newton</span>
             </p>
-            <a href="assets/WidmanCVV.pdf" download="Agustin_Widman_CV" class="ant-btn ant-btn-primary">Download CV</a>
+            <a href="assets/WidmanCV.pdf" download="Agustin_Widman_CV" class="ant-btn ant-btn-primary">Descargar CV</a>
         </div>
         
         <div class="profile-photo">
@@ -34,7 +34,7 @@ function loadPage(page) {
         mainContent.innerHTML = `
             <div class="about-section">
                 <div class="bio-card">
-                    <h2>About Me</h2>
+                    <h2>ACERCA DE MI</h2>
                     <p>Soy Agustín Widman Aguayo, originario de Yucatán, México. Desde pequeño me ha apasionado la tecnología. Estudié Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Mérida, y a lo largo de mi carrera he combinado el emprendimiento con mi pasión por la programación, creando negocios tecnológicos y desarrollando aplicaciones que facilitan la vida de sus usuarios.</p>
                     
                     <p>Durante más de una década, he tenido la oportunidad de desempeñarme en diferentes roles en el ámbito de la tecnología, desde la administración de bases de datos hasta el desarrollo de aplicaciones. Como fundador y administrador en Soporte WM SA de CV, tuve la oportunidad de crear soluciones en facturación electrónica y seguridad para servidores, experiencia que me ha formado como un profesional versátil y orientado a resolver problemas.</p>
@@ -46,7 +46,7 @@ function loadPage(page) {
 
                     <!-- Datos de contacto organizados en una sola línea -->
                     <div class="contact-info">
-                        <span><i class="anticon anticon-mail"></i> <a href="mailto:agustinwidman@gmail.com">agustinwidman@gmail.com</a></span>
+                        <span><i class="anticon anticon-mail"></i> <a href="mailto:agustinwidman@gmail.com">UO308677@UNIOVI.ES</a></span>
                         <span><i class="anticon anticon-phone"></i> 624411952</span>
                         <span><i class="anticon anticon-linkedin"></i> <a href="https://www.linkedin.com/in/agustinwidman" target="_blank">LinkedIn</a></span>
                     </div>
@@ -56,7 +56,7 @@ function loadPage(page) {
     } else if (page === 'portfolio') {
         mainContent.innerHTML = `
             <div class="portfolio-section">
-                <h2>Portfolio</h2>
+                <h2>Trabajos</h2>
                 
                 <!-- Perfil Personal -->
                 <div class="profile-section">
@@ -106,7 +106,7 @@ function loadPage(page) {
                     <h2 style="color: #0074cc; text-align: center;">Contáctame</h2>
                 </div>
                 <div class="ant-card-body" style="font-size: 1.2em; line-height: 1.6;">
-                    <p><strong>Email:</strong> <a href="mailto:UO308677@GMAIL.COM">UO308677@GMAIL.COM</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:UO308677@GMAIL.COM">UO308677@UNIOVI.ES</a></p>
                     <p><strong>Teléfono:</strong> 624411952</p>
                     <p><strong>Dirección:</strong> Calle Falsa 123, Oviedo, España</p>
                     <p><strong>Horario de Contacto:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
