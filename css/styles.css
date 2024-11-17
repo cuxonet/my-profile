@@ -268,3 +268,34 @@ body {
     object-fit: cover; /* Asegura que la imagen no se distorsione */
 }
 
+@media (max-width: 768px) {
+    .search-container {
+        width: 100%; /* Ocupa todo el ancho */
+        display: flex; /* Alinear input y botón en una fila */
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center; /* Centrar elementos */
+        gap: 10px; /* Espaciado entre el input y el botón */
+    }
+
+    #search-input,
+    #search-button {
+        width: 250px; /* Mismo ancho que los botones del menú */
+        height: 50px; /* Altura fija igual que los botones */
+        font-size: 1em; /* Tamaño de texto consistente */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Botones en columna */
+        align-items: center; /* Centrar botones */
+        gap: 10px; /* Espaciado uniforme entre botones */
+    }
+
+    nav a {
+        width: 250px; /* Mismo ancho que input y botón buscar */
+        height: 50px; /* Altura fija consistente */
+        line-height: 50px; /* Alinear texto verticalmente */
+        text-align: center; /* Centrar texto */
+        font-size: 1em; /* Tamaño de texto uniforme */
+    }
+}
