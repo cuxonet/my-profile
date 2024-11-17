@@ -299,3 +299,14 @@ body {
         font-size: 1em; /* Tamaño de texto uniforme */
     }
 }
+.visually-hidden {
+    position: absolute; /* Posiciona fuera del flujo normal */
+    width: 1px; /* Hace que ocupe el mínimo espacio */
+    height: 1px; /* Lo mismo para la altura */
+    padding: 0; /* Sin relleno */
+    margin: -1px; /* Quita cualquier margen */
+    overflow: hidden; /* Oculta el contenido que exceda el área */
+    clip: rect(0, 0, 0, 0); /* Lo recorta completamente */
+    white-space: nowrap; /* Evita que ocupe más de una línea */
+    border: 0; /* Sin bordes */
+}
