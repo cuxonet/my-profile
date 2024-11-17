@@ -16,7 +16,7 @@ function loadPage(page) {
     if (page === 'home') {
         mainContent.innerHTML = `
         <div class="intro-text">
-            <h1> <span class="highlight"> Mi Perfil -- AGUSTIN WIDMAN</span></h1>
+            <h1> <span class="highlightt"> Mi Perfil -- AGUSTIN WIDMAN</span></h1>
             <p>Transformando ideas en soluciones tecnológicas y apasionado por el aprendizaje continuo.</p>
             <p style="font-size: 1.5em; font-style: italic; color: #666; margin-top: 15px;">
                 "Si he logrado ver más lejos, es porque estoy parado sobre los hombros de gigantes."
@@ -125,4 +125,37 @@ function loadPage(page) {
 // Seleccionar la página "Home" por defecto al cargar la página
 document.addEventListener("DOMContentLoaded", () => {
     loadPage('home');
+});
+
+$(document).ready(function () {
+    // Evento del botón de búsqueda
+    $("#search-button").on("click", function () {
+        const value = $("#search-input").val().toLowerCase(); // Obtener el valor del input
+
+        // Eliminar cualquier resaltado previo
+        removeHighlights();
+
+        if (value) {
+            // Buscar y resaltar coincidencias
+            $(".content *").contents().each(function () {
+                if (this.nodeType === 3) { // NodeType 3: Nodo de texto
+                    const text = $(this).text();
+                    const regex = new RegExp(value, "gi"); // Expresión regular para buscar palabras
+                    if (regex.test(text)) {
+                        const highlightedText = text.replace(regex, function (match) {
+                            return `<span class="highlight">${match}</span>`; // Envolver coincidencias en un span
+                        });
+                        $(this).replaceWith(highlightedText); // Reemplazar solo el texto
+                    }
+                }
+            });
+        }
+    });
+
+    // Función para eliminar el resaltado
+    function removeHighlights() {
+        $(".highlight").each(function () {
+            $(this).replaceWith($(this).text()); // Reemplazar el span por su texto original
+        });
+    }
 });
