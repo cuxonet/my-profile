@@ -8,8 +8,7 @@
 /* Configuración general del body */
 body {
     font-family: Arial, sans-serif; /* Establece la fuente principal */
-    /*background-color: #f2f2f2;  Color de fondo del sitio */
-    background-color: #ADD8E6;
+    background-color: #ADD8E6; /* Color de fondo del sitio */
     color: #333; /* Color principal del texto */
 }
 
@@ -19,7 +18,7 @@ body {
     justify-content: space-between; /* Distribuye elementos equitativamente */
     align-items: center; /* Alinea verticalmente */
     padding: 15px 20px; /* Relleno interno */
-    background-color: #f2f2f2; /* Color de fondo#f2f2f2 */
+    background-color: #f2f2f2; /* Color de fondo */
 }
 
 /* Enlaces dentro del header */
@@ -92,22 +91,7 @@ body {
     margin-top: 20px; /* Margen superior */
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column; /* Diseño vertical */
-        align-items: center; /* Centrado */
-    }
-
-    .intro-text,
-    .profile-photo {
-        max-width: 100%; /* Ancho completo */
-        text-align: center; /* Texto centrado */
-        margin: 10px 0; /* Margen superior e inferior */
-    }
-}
-
-
+/* Sección Portfolio */
 .portfolio-section {
     max-width: 800px;
     margin: 40px auto;
@@ -180,29 +164,14 @@ body {
 .contact-info a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor */
 }
-.search-container {
-    text-align: center;
-    margin: 0px;
-}
 
-#search-input {
-    padding: 10px;
-    width: 90%;
-    font-size: 1em;
-    border: 2px solid #0074cc;
-    border-radius: 5px;
-}
-
-.highlight {
-    color: red; /* Texto en rojo */
-    font-weight: bold; /* Negrita */
-    display: inline;
-}
-
+/* Buscador */
 .search-container {
     display: flex; /* Contenedor flexible */
     align-items: center; /* Alinear verticalmente */
     gap: 5px; /* Espaciado entre el input y el botón */
+    text-align: center;
+    margin: 0;
 }
 
 #search-input {
@@ -237,4 +206,58 @@ body {
 
 #search-button:focus {
     outline: none; /* Sin borde de enfoque */
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center; /* Centrar los elementos */
+        gap: 10px; /* Espaciado entre elementos */
+    }
+
+    .search-container {
+        width: 100%; /* Ocupa todo el ancho */
+        text-align: center; /* Centra el buscador */
+    }
+
+    #search-input {
+        width: 80%; /* Reducir el ancho del input */
+        margin-bottom: 10px; /* Espaciado debajo del input */
+    }
+
+    #search-button {
+        width: 80%; /* Botón del mismo ancho que el input */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Hacer que los enlaces estén en columna */
+        align-items: center; /* Centrar los enlaces */
+        gap: 10px; /* Espaciado entre enlaces */
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    nav a {
+        width: 80%; /* Ocupa el 80% del ancho del header */
+        text-align: center; /* Centrar el texto de los enlaces */
+        padding: 10px 0; /* Más espacio vertical en los botones */
+    }
+}
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Cambiar diseño a vertical */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .profile-photo {
+        order: -1; /* Mover la imagen arriba del texto */
+        max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Separación debajo de la imagen */
+    }
+
+    .intro-text {
+        max-width: 100%; /* Texto ocupa todo el ancho */
+        text-align: center; /* Centrar el texto */
+    }
 }
