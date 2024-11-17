@@ -63,7 +63,7 @@ body {
     margin-bottom: 20px; /* Margen inferior */
 }
 
-.highlight {
+.highlightt {
     color: #0074cc; /* Color de palabras resaltadas */
     font-weight: bold; /* Texto en negrita */
 }
@@ -179,4 +179,62 @@ body {
 
 .contact-info a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+.search-container {
+    text-align: center;
+    margin: 0px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 90%;
+    font-size: 1em;
+    border: 2px solid #0074cc;
+    border-radius: 5px;
+}
+
+.highlight {
+    color: red; /* Texto en rojo */
+    font-weight: bold; /* Negrita */
+    display: inline;
+}
+
+.search-container {
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Alinear verticalmente */
+    gap: 5px; /* Espaciado entre el input y el botón */
+}
+
+#search-input {
+    flex: 1; /* Permitir que el input ocupe más espacio */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Sin borde de enfoque */
+}
+
+#search-button {
+    background-color: #0074cc; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 6px 15px; /* Botón más pequeño */
+    font-size: 14px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto suave al cambiar el fondo */
+}
+
+#search-button:hover {
+    background-color: #005999; /* Fondo más oscuro al pasar el ratón */
+}
+
+#search-button:active {
+    background-color: #003f73; /* Fondo más oscuro al hacer clic */
+    transform: scale(0.98); /* Ligera reducción del tamaño */
+}
+
+#search-button:focus {
+    outline: none; /* Sin borde de enfoque */
 }
